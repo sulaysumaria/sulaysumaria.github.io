@@ -8,7 +8,7 @@ permalink: /about/
 
 My name is Sulay Sumaria. I'm a software developer from Gujarat, India.
 
-I develop REST/GraphQL Server[less] APIs with NodeJS, Webapps with VueJS and Mobile Apps with Flutter. I love clean, human readable code.
+I develop REST/GraphQL Server[less] APIs with NodeJS and Mobile Apps with Flutter. I love clean, human readable code.
 
 # About this blog
 

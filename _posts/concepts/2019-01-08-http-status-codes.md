@@ -9,7 +9,7 @@ Here are the HTTP Status Codes that are present in the world of Internet. Whenev
 
 #### 1xx - Informational
 
-- 100 - COntinue
+- 100 - Continue
 - 101 - Switching Protocols
 - 102 - Processing (WebDAV)
 
