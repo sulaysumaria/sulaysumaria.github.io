@@ -8,6 +8,6 @@ twitter_username: sulaysumaria
 github_username: sulaysumaria
 
 # Build settings
-theme: minima
+theme: jekyll-theme-modernist
 plugins:
   - jekyll-feed
