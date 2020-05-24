@@ -1,0 +1,13 @@
+title: Sulay Sumaria
+email: sulaysumaria@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  This blog is  mainly to bookmark a few code snippets and a explanation of a few topics which can be shared easily with someone who needs it.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sulaysumaria.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: sulaysumaria
+github_username: sulaysumaria
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
