@@ -10,11 +10,11 @@ I have been working with aws EC2 instances for a while now. When generating a ne
 First and install the putty on linux
 
 ```bash
-$ apt-get install putty-tools
+apt-get install putty-tools
 ```
 
 and then use below command to generate the pem file.
 
 ```bash
-$ puttygen server.ppk -O private-openssh -o server.pem
+puttygen server.ppk -O private-openssh -o server.pem
 ```

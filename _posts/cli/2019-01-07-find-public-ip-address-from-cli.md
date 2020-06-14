@@ -10,9 +10,9 @@ There are many ways to find out your public IP address or wan (Wide Area Network
 Use below command:
 
 ```bash
-$ dig +short myip.opendns.com @resolver1.opendns.com
+dig +short myip.opendns.com @resolver1.opendns.com
 # or
-$ dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
 ```
 
 This comamnds work on any UNIX-like operating system.
