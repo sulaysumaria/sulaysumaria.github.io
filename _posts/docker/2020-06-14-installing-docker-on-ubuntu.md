@@ -25,5 +25,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
 # Clear docker logs
-echo "" > $(docker inspect --format='{{.LogPath}}' <container_name_or_id>)
+# Note: Do not copy below line if you are viewing source code, it is modified to
+# work with jekyll as jekyll skips the double curly braces as its templating
+# Actual commsnd: echo "" > $(docker inspect --format='{{.LogPath}}' <container_name_or_id>)
+echo "" > $(docker inspect --format='{{"{{.LogPath"}}}}' <container_name_or_id>)
 ```
