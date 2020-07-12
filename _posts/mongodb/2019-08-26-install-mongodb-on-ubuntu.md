@@ -65,18 +65,28 @@ Copy following text to that file:
 
 ```
 [Unit]
-Description=MongoDB Database Service
-Wants=network.target
+Description=MongoDB Database Server
+Documentation=https://docs.mongodb.org/manual
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/mongod --config /etc/mongod.conf
-ExecReload=/bin/kill -HUP $MAINPID
-Restart=always
 User=mongodb
 Group=mongodb
-StandardOutput=syslog
-StandardError=syslog
+EnvironmentFile=-/etc/default/mongod
+ExecStart=/usr/bin/mongod --config /etc/mongod.conf
+PIDFile=/var/run/mongodb/mongod.pid
+LimitFSIZE=infinity
+LimitCPU=infinity
+LimitAS=infinity
+LimitNOFILE=64000
+LimitNPROC=64000
+LimitMEMLOCK=infinity
+TasksMax=infinity
+TasksAccounting=false
+Restart=always
+
+# Recommended limits for for mongod as specified in
+# http://docs.mongodb.org/manual/reference/ulimit/#recommended-settings
 
 [Install]
 WantedBy=multi-user.target
