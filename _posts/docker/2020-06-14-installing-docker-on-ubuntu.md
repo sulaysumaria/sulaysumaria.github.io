@@ -30,3 +30,9 @@ docker-compose --version
 # Actual commsnd: echo "" > $(docker inspect --format='{{.LogPath}}' <container_name_or_id>)
 echo "" > $(docker inspect --format='{{"{{.LogPath"}}}}' <container_name_or_id>)
 ```
+
+If you want to delete all unused resources that docker created, you can run following command:
+
+```bash
+docker system prune --volumes
+```
