@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Installing Node with NVM"
+title: 'Installing Node with NVM'
 categories: [Node]
 permalink: /installing-node-with-nvm
 ---
@@ -13,7 +13,7 @@ To install `nvm`, run following command from your home directory:
 
 ```bash
 # install nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.37.2/install.sh | bash
 ```
 
 After installing nvm, install node using following:
@@ -30,15 +30,15 @@ Some usefull commands:
   Lists all the versions of node installed.
 - `nvm ls-remote`
   Lists all the versions of node available.
-- `nvm install v11.10.1`
+- `nvm install v14.15.5`
   Install specific version of node.
-- `nvm use v11.10.1`
+- `nvm use v14.15.5`
   Use specific version of node.
 
 Updating to a newer version of node:
 
 ```bash
 nvm ls-remote
-nvm install v11.10.1
-nvm uninstall v11.10.0
+nvm install v14.15.5
+nvm uninstall v14.15.5
 ```
